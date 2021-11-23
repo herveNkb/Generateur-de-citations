@@ -33,8 +33,8 @@
 
 Nous avons réussi à générer un nombre aléatoire non-utilisé par la précédente citation, il ne faut plus que :
 
-    - Stocker ce nombre dans la variable nombreAleatoire.
+- Stocker ce nombre dans la variable nombreAleatoire.
 
-    - Modifier le contenu de notre objet citation par la citation à l'index nombreAleatoire de notre tableau.
+- Modifier le contenu de notre objet citation par la citation à l'index nombreAleatoire de notre tableau.
 
-    - Modifier l'auteur de notre objet auteur par l'auteur à l'index nombreAleatoire de notre tableau.
+- Modifier l'auteur de notre objet auteur par l'auteur à l'index nombreAleatoire de notre tableau.
