@@ -24,10 +24,8 @@
 
 - Pour générer un nombre aléatoire avec JavaScript, il faut utiliser la fonction Math.random(). Le problème de cette fonction, c'est qu'elle génère un nombre à virgule (donc un flottant), entre 0 et 1. Nous, nous souhaitons un entier, entre 0 et 5 si nous avons 6 citations. Dans ce cas, il va falloir changer de fonctionnement !  
   Cette fonction genererNombreEntier(max), qui prend en paramètre le nombre d'éléments dans votre tableau de citations. N'hésitez pas à la réutiliser ! Cette fonction utilise la fonction Math.floor() qui renvoie le plus grand entier qui est inférieur ou égal à un nombre. Par exemple, si je fais Math.floor(5.8), elle me renvoie 5.  
-  Ici, nous générons donc un nombre aléatoire, par exemple 0.7, que nous multiplions par notre nombre d'éléments. Si j'ai 6 éléments, j'ai donc 0.7 _ 6, ce qui fait 4.2. Ma fonction Math.floor() me retournera donc 4. Parfait : nous avons bien notre entier.  
-   `function genererNombreEntier(max) {
-  return Math.floor(Math.random() _ Math.floor(max));
-  }`
+  Ici, nous générons donc un nombre aléatoire, par exemple 0.7, que nous multiplions par notre nombre d'éléments. Si j'ai 6 éléments, j'ai donc 0.7 \_ 6, ce qui fait 4.2. Ma fonction Math.floor() me retournera donc 4. Parfait : nous avons bien notre entier.  
+  `function genererNombreEntier(max) { return Math.floor(Math.random() _ Math.floor(max)); }`
 
 ### 5. Mettre à jour le contenu
 
