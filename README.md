@@ -2,7 +2,7 @@
 
 ## Étapes:
 
-1. Récupérer les éléments nécessaires:
+### 1. Récupérer les éléments nécessaires:
 
 - l'emplacement qui contient la citation.
 
@@ -10,15 +10,15 @@
 
 - le bouton qui permet de générer une nouvelle citation.
 
-2. Créer les variables utiles:
+### 2. Créer les variables utiles:
 
 - [dernier] - contient l'index de la question actuellement affichée (par défaut, la citation affichée est la première du tableau, sa valeur est donc égale à 0).
 
 - [nombreAleatoire] - contient le nombre aléatoire généré.
 
-3. Détecter le clic du bouton _"Nouvelle Citation"_.
+### 3. Détecter le clic du bouton _"Nouvelle Citation"_.
 
-4. Générer un nombre aléatoire
+### 4. Générer un nombre aléatoire
 
 - utiliser une boucle do...while pour cette étape. Ceci vous permettra de générer un nombre tant que ce dernier est égal au nombre de la variable dernier.
 
@@ -29,12 +29,12 @@
   return Math.floor(Math.random() _ Math.floor(max));
   }`
 
-5. Mettre à jour le contenu
+### 5. Mettre à jour le contenu
 
 Nous avons réussi à générer un nombre aléatoire non-utilisé par la précédente citation, il ne faut plus que :
 
-    * Stocker ce nombre dans la variable nombreAleatoire.
+    - Stocker ce nombre dans la variable nombreAleatoire.
 
-    * Modifier le contenu de notre objet citation par la citation à l'index nombreAleatoire de notre tableau.
+    - Modifier le contenu de notre objet citation par la citation à l'index nombreAleatoire de notre tableau.
 
-    * Modifier l'auteur de notre objet auteur par l'auteur à l'index nombreAleatoire de notre tableau.
+    - Modifier l'auteur de notre objet auteur par l'auteur à l'index nombreAleatoire de notre tableau.
