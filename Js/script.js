@@ -1,3 +1,12 @@
+// Sélection des éléments nécessaires
+let adage = document.querySelector('#citation');
+let author = document.querySelector('#auteur');
+let btn = document.querySelector('#nouveau');
+
+// Variables essentielles
+let dernier = 0; // Stocke la citation actuellement affichée
+let nombreAleatoire = 0; // Stocke le nbe aléatoire (l'index) pour afficher une citations
+
 // Tableau de citations
 let citations = [
   [
@@ -70,3 +79,22 @@ let citations = [
     'Winston Churchill',
   ],
 ];
+
+// Fonction générant un nbe aléatoire, mais grâce à 'Math.floor' il sera toujours un nbe entier
+function genererNombreEntier(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+// Détection du clic sur le bouton
+btn.addEventListener('click', () => {
+  do {
+    nombreAleatoire = genererNombreEntier(citations.length);
+  } while (nombreAleatoire == dernier);
+
+  // Affiche le chnagement de citation et d'auteur
+  adage.textContent = citations[nombreAleatoire][0];
+  author.textContent = citations[nombreAleatoire][1];
+
+  // Évite qu'une citation ne se répète
+  dernier = nombreAleatoire;
+});
